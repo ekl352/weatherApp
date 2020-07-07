@@ -25,14 +25,6 @@ const port = 3000;
 const server = app.listen(port, ()=> {
 	console.log(`running on local host: ${port}`)
 })
-// Callback to debug
-
-
-// Setup Server
-
-
-// Initialize all route with a callback function
-
 
 // Callback function to complete GET '/all'
 app.get('/all', function(req, res){
