@@ -8,6 +8,7 @@ body{
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
     height:100vh;
+    grid-template-rows: 0.4fr 1fr 1.4fr 1fr;
     background: #f23557;
     color: #f0d43a;
     justify-content: center;
@@ -16,8 +17,12 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
-.holder{
+.feel{
 
+}
+
+.holder{
+    overflow: scroll;
 }
 
 .entry{
@@ -29,14 +34,16 @@ body{
 }
 
 #date{
-
+    color: white;
 }
 
 #temp{
+    color: white;
 
 }
 
 #content{
+    color:white;
 
 }
 

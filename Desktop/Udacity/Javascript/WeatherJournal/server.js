@@ -44,18 +44,16 @@ app.get('/all', function(req, res){
 app.post('/addData', addData);
 
 function addData(req, res) {
-	projectData = {
-		date: req.body.date,
-		temp: req.body.temp,
-		content: req.body.content
-	};
 
-	console.log(projectData);
+	let data = req.body;
+	console.log('server side', data);
 
-	res.send({
-		sucess: true,
-		message: "Data Saved",
-		data: projectData
-	});
+	//Create new entry for JS Object Endpoint
+	projectData["temp"] = data.temp;
+	projectData["content"] = data.content;
+	projectData["date"]= data.date;
+
+	//Send response to endpoint
+	res.send(projectData);
+	console.log('projectData', projectData);
 }
-
